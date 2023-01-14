@@ -64,8 +64,8 @@ GameLevel askGameLevel() {
     cout << "Please choose game level:\n";
     
     cout << "1) Easy\n";
-    cout << "1) Medium\n";
-    cout << "2) Hard\n\n";
+    cout << "2) Medium\n";
+    cout << "3) Hard\n\n";
     
     cin >> gameLevel;
     
