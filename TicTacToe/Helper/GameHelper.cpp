@@ -7,7 +7,7 @@
 
 #include <iostream>
 
-#include "GameHelper.h"
+#include "GameHelper.hpp"
 
 
 

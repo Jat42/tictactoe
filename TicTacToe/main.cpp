@@ -6,9 +6,10 @@
 //
 
 #include <iostream>
-#include "main.h"
-#include "GameHelper.h"
 
+#include "main.hpp"
+#include "GameHelper.hpp"
+#include "GameManager.hpp"
 
 using namespace std;
 using namespace GameModeEnum;
@@ -17,7 +18,8 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     
     GameMode gameMode = singlePlayer;
-    GameLevel gameLevel = easy ;
+    GameLevel gameLevel = easy;
+    
     
     greetUser();
     
@@ -26,6 +28,9 @@ int main(int argc, const char * argv[]) {
     if (gameMode == singlePlayer) {
         gameLevel = askGameLevel();
     }
+    
+    GameManager manager(gameMode, gameLevel);
+    manager.startGame();
     
     return 0;
 }
@@ -81,4 +86,8 @@ GameLevel askGameLevel() {
     GameLevel level = GameLevelEnum::all[gameLevelInt];
     
     return level;
+}
+
+void initGame() {
+    
 }

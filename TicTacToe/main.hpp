@@ -8,7 +8,7 @@
 #ifndef main_h
 #define main_h
 
-#include "GameHelper.h"
+#include "GameHelper.hpp"
 
 using namespace GameModeEnum;
 using namespace GameLevelEnum;
