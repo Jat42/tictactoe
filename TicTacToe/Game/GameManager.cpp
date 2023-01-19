@@ -8,6 +8,7 @@
 //#include <iostream>
 
 #include "GameManager.hpp"
+#include "TwoPlayerGame.hpp"
 
 GameManager::GameManager(GameMode mode, GameLevel level) {
     gameMode = mode;
@@ -15,7 +16,14 @@ GameManager::GameManager(GameMode mode, GameLevel level) {
 }
 
 void GameManager::startGame() {
-    cout << "Game started\n";
+    
+    if (gameMode == twoPlayer) {
+        cout << "Game started\n";
+        TwoPlayerGame game = TwoPlayerGame();
+        game.start();
+    } else {
+        cout << "AI mode is comming soon\n";
+    }
 }
 
     

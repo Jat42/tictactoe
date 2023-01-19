@@ -36,7 +36,7 @@ int main(int argc, const char * argv[]) {
 }
 
 void greetUser() {
-    cout << "Hello, Welcome to tictoktoe.!\n\n";
+    cout << "Hello, Welcome to tictaktoe.!\n\n";
 }
 
 GameMode askGameOptions() {

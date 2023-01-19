@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8BA562CE29733C6B00935D4D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA562CD29733C6B00935D4D /* main.cpp */; };
+		8BA562D5297347D800935D4D /* GameHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA562D4297347D800935D4D /* GameHelper.cpp */; };
+		8BA562DA29736D8D00935D4D /* GameManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA562D829736D8D00935D4D /* GameManager.cpp */; };
+		8BA562DD2974092100935D4D /* SinglePlayerGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA562DB2974092100935D4D /* SinglePlayerGame.cpp */; };
+		8BA562E02974093300935D4D /* TwoPlayerGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA562DE2974093300935D4D /* TwoPlayerGame.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,15 @@
 /* Begin PBXFileReference section */
 		8BA562CA29733C6B00935D4D /* TicTacToe */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TicTacToe; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA562CD29733C6B00935D4D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8BA562D4297347D800935D4D /* GameHelper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameHelper.cpp; sourceTree = "<group>"; };
+		8BA562D629734CDA00935D4D /* main.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = main.hpp; sourceTree = "<group>"; };
+		8BA562D729735A2E00935D4D /* GameHelper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GameHelper.hpp; sourceTree = "<group>"; };
+		8BA562D829736D8D00935D4D /* GameManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameManager.cpp; sourceTree = "<group>"; };
+		8BA562D929736D8D00935D4D /* GameManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GameManager.hpp; sourceTree = "<group>"; };
+		8BA562DB2974092100935D4D /* SinglePlayerGame.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SinglePlayerGame.cpp; sourceTree = "<group>"; };
+		8BA562DC2974092100935D4D /* SinglePlayerGame.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SinglePlayerGame.hpp; sourceTree = "<group>"; };
+		8BA562DE2974093300935D4D /* TwoPlayerGame.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TwoPlayerGame.cpp; sourceTree = "<group>"; };
+		8BA562DF2974093300935D4D /* TwoPlayerGame.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TwoPlayerGame.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +70,34 @@
 		8BA562CC29733C6B00935D4D /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				8BA562D629734CDA00935D4D /* main.hpp */,
 				8BA562CD29733C6B00935D4D /* main.cpp */,
+				8BA562E12974093F00935D4D /* Game */,
+				8BA562E22974094600935D4D /* Helper */,
 			);
 			path = TicTacToe;
+			sourceTree = "<group>";
+		};
+		8BA562E12974093F00935D4D /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				8BA562D929736D8D00935D4D /* GameManager.hpp */,
+				8BA562D829736D8D00935D4D /* GameManager.cpp */,
+				8BA562DC2974092100935D4D /* SinglePlayerGame.hpp */,
+				8BA562DB2974092100935D4D /* SinglePlayerGame.cpp */,
+				8BA562DF2974093300935D4D /* TwoPlayerGame.hpp */,
+				8BA562DE2974093300935D4D /* TwoPlayerGame.cpp */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		8BA562E22974094600935D4D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8BA562D729735A2E00935D4D /* GameHelper.hpp */,
+				8BA562D4297347D800935D4D /* GameHelper.cpp */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +158,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BA562CE29733C6B00935D4D /* main.cpp in Sources */,
+				8BA562DA29736D8D00935D4D /* GameManager.cpp in Sources */,
+				8BA562DD2974092100935D4D /* SinglePlayerGame.cpp in Sources */,
+				8BA562D5297347D800935D4D /* GameHelper.cpp in Sources */,
+				8BA562E02974093300935D4D /* TwoPlayerGame.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
